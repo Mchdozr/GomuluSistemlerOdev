@@ -1,0 +1,11 @@
+-d C:\Users\mucah\Desktop\trafikLambasi\impl\gwsynthesis\trafikLambasi.vg
+-p GW1NZ-1-QFN48-6
+-pn GW1NZ-LV1QN48C6/I5
+-cst C:\Users\mucah\Desktop\trafikLambasi\src\trafikLambasi.cst
+-cfg C:\Users\mucah\Desktop\trafikLambasi\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-route_maxfan 10

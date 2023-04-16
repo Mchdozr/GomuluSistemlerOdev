@@ -1,0 +1,18 @@
+module single_port_ram(
+    input clk,
+    input we,   // Write enable
+    input [7:0] addr,  // Address bus
+    input [7:0] data_in,  // Write data bus
+    output reg [7:0] data_out  // Read data bus
+);
+    
+    reg [7:0] mem [0:255]; // 256x8 bit bellek oluşturuldu, adres aralığı 0-255
+    
+    always @(posedge clk) begin
+        if (we) // Yazma işlemi
+            mem[addr] <= data_in;
+        else // Okuma işlemi
+            data_out <= mem[addr];
+    end
+
+endmodule
